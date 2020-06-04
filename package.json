@@ -30,6 +30,7 @@
     "url": "https://github.com/mraghuram3/ngx-text-highlight/issues"
   },
   "devDependencies": {
+    "@angular-devkit/schematics": "^9.1.7",
     "@angular/common": "^5.0.0",
     "@angular/compiler": "^5.0.0",
     "@angular/compiler-cli": "^5.0.0",

@@ -1,8 +1,6 @@
 {
+  "extends": "../../tsconfig.json",
   "compilerOptions": {
-    "declaration": true,
-    "module": "es2015",
-    "target": "es5",
     "baseUrl": ".",
     "stripInternal": true,
     "emitDecoratorMetadata": true,
@@ -10,21 +8,25 @@
     "moduleResolution": "node",
     "outDir": "../build",
     "rootDir": ".",
-    "lib": [
-      "es2015",
-      "dom"
-    ],
     "skipLibCheck": true,
-    "types": []
+
+    "module": "es2015",
+    "target": "es2015",
+    "declaration": true,
+    "inlineSources": true,
+    "types": [],
+    "lib": ["dom", "es2018"]
   },
+  "exclude": ["src/test.ts", "**/*.spec.ts"],
+  "files": ["./index.ts"],
   "angularCompilerOptions": {
+    "fullTemplateTypeCheck": true,
+    "strictInjectionParameters": true,
+    "enableResourceInlining": true,
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,
     "flatModuleOutFile": "ngx-text-highlight.js",
     "flatModuleId": "ngx-text-highlight"
-  },
-  "files": [
-    "./index.ts"
-  ]
+  }
 }
