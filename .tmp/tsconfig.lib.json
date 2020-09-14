@@ -20,9 +20,6 @@
   "exclude": ["src/test.ts", "**/*.spec.ts"],
   "files": ["./index.ts"],
   "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true,
-    "enableResourceInlining": true,
     "annotateForClosureCompiler": true,
     "strictMetadataEmit": true,
     "skipTemplateCodegen": true,

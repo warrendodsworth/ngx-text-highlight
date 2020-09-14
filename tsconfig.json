@@ -1,5 +1,4 @@
 {
-  "compileOnSave": false,
   "compilerOptions": {
     "skipLibCheck": true,
     "allowSyntheticDefaultImports": true,
@@ -16,9 +15,5 @@
     "types": [],
     "typeRoots": ["node_modules/@types"],
     "lib": ["es2018", "dom"]
-  },
-  "angularCompilerOptions": {
-    "fullTemplateTypeCheck": true,
-    "strictInjectionParameters": true
   }
 }
